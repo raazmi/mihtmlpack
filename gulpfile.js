@@ -5,22 +5,6 @@ const inject = require('gulp-inject');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 
-// Move JS Files to app/js
-gulp.task('css', function () {
-    return gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.css')
-        .pipe(gulp.dest("app/assets/css"))
-        .pipe(browserSync.stream());
-});
-
-// Move JS Files to app/js
-gulp.task('js', function () {
-    return gulp.src([
-            'node_modules/bootstrap/dist/js/bootstrap.min.js',
-            'node_modules/jquery/dist/jquery.min.js',
-        ])
-        .pipe(gulp.dest("app/assets/js"))
-        .pipe(browserSync.stream());
-});
 
 
 // Inject Html Files
@@ -74,6 +58,5 @@ gulp.task('watcher', function () {
     gulp.watch('app/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('ready', ['css', 'js']);
 
 gulp.task('default', ['inject', 'style', 'watcher']);

@@ -1,0 +1,144 @@
+/**
+ * Typography
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+body {
+    overflow: hidden;
+    font-size: $fz-body;
+    line-height: $lh-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $ff-body;
+    color: $color-body;
+    font-weight: 400;
+}
+
+@include placeholder-color($color-body);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+address,
+p,
+pre,
+blockquote,
+dl,
+dd,
+menu,
+ol,
+ul,
+table,
+caption,
+hr {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $ff-heading;
+    color: $color-heading;
+}
+
+h1,
+.h1 {
+    font-size: $fz-heading-1;
+    line-height: $lh-heading-1;
+}
+
+h2,
+.h2 {
+    font-size: $fz-heading-2;
+    line-height: $lh-heading-2;
+}
+
+h3,
+.h3 {
+    font-size: $fz-heading-3;
+    line-height: $lh-heading-3;
+}
+
+h4,
+.h4 {
+    font-size: $fz-heading-4;
+    line-height: $lh-heading-4;
+}
+
+h5,
+.h5 {
+    font-size: $fz-heading-5;
+    line-height: $lh-heading-5;
+}
+
+h6,
+.h6 {
+    font-size: $fz-heading-6;
+    line-height: $lh-heading-6;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+input,
+button,
+select,
+textarea {
+    background: transparent;
+    border: 1px solid $color-border;
+    transition: all 0.4s ease-out 0s;
+    color: $color-body;
+    @include placeholder-color($color-body);
+
+    &:focus,
+    &:active {
+        outline: none;
+        border-color: $color-theme;
+    }
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    font-size: 14px;
+}
+
+input,
+select {
+    height: 40px;
+    padding: 0 15px;
+}

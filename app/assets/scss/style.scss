@@ -1,0 +1,28 @@
+/*
+ * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ *
+ * Template Name: Template name here   
+ * Template URI: https://example.com
+ * Description: Template description here
+ * Author: AuthorNameHere
+ * Author URI: AuthorUriHere
+ * Version: 1.0
+ *
+ * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ */
+
+@import 'variables';
+@import 'mixins';
+
+@import 'basic/reset';
+@import 'basic/animations';
+@import 'basic/typography';
+@import 'basic/utilities';
+
+@import 'elements/button';
+@import 'elements/titles';
+
+@import 'sections/header';
+@import 'sections/nav';
+@import 'sections/heroslider';
+@import 'sections/footer';
